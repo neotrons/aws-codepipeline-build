@@ -1,0 +1,12 @@
+{
+  "apps" : [{
+    "name": "Server",
+    "script": "./bin/www.js",
+    "instances": 2,
+    "env": {
+      "PORT": "8080",
+      "RENDERTRON_URL": "http://52.200.9.140:3000/render",
+      "DIST_PATH": ""
+    }
+  }]
+}
