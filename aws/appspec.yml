@@ -1,0 +1,22 @@
+version: 0.0
+os: linux
+files:
+  - source: /
+    destination: /home/ubuntu/app
+hooks:
+  BeforeInstall:
+    - location: bin/codedeploy/before_install.sh
+      timeout: 300
+      runas: root
+  AfterInstall:
+    - location: bin/codedeploy/after_install.sh
+      timeout: 300
+      runas: root
+  ApplicationStart:
+    - location: bin/codedeploy/application_start.sh
+      timeout: 300
+      runas: root
+  ApplicationStop:
+    - location: bin/codedeploy/application_stop.sh
+      timeout: 300
+      runas: root
