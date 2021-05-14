@@ -1,3 +1,4 @@
 #!/bin/bash
-cd ~/app
-pm2 start ./bin/process.json
+cd /home/ubuntu/app/server/
+npm install
+chown ubuntu:ubuntu /home/ubuntu/app/ -R

@@ -11,6 +11,9 @@ phases:
     commands:
       - echo "Starting the build step"
       - npm run build
+      - cp -ra ./server/ ./dist/aws-codepipeline-build/
+      - cp -ra ./bin/ ./dist/aws-codepipeline-build/
+      - cp -ra ./aws/appspec.yml ./dist/aws-codepipeline-build/
       - echo "Finished"
 artifacts:
   name: "BuildOutput"
