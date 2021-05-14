@@ -1,4 +1,6 @@
 #!/bin/bash
-cd /home/ubuntu/app/server/
+APPDIR=/home/ubuntu/app/
+SERVERDIR=$APPDIR"server/"
+cd $SERVERDIR
 npm install
-chown ubuntu:ubuntu /home/ubuntu/app/ -R
+chown ubuntu:ubuntu $APPDIR -R

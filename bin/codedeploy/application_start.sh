@@ -1,3 +1,4 @@
 #!/bin/bash
-cd /home/ubuntu/app/
+APPDIR=/home/ubuntu/app/
+cd $APPDIR
 pm2 start ./bin/process.json

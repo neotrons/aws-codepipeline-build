@@ -1,3 +1,4 @@
 #!/bin/bash
-rm -rf /home/ubuntu/app/
-mkdir /home/ubuntu/app/
+APPDIR=/home/ubuntu/app/
+rm -rf $APPDIR
+mkdir $APPDIR
